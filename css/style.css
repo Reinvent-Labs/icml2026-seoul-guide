@@ -75,14 +75,51 @@ a:hover { text-decoration: underline; }
   margin-bottom: 1.5rem;
 }
 
-.hero .author {
-  font-size: 0.875rem;
-  color: var(--muted);
-  margin-top: 1rem;
+.author-card {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-top: 1.5rem;
+  padding: 1rem 1.25rem;
+  background: var(--card-bg);
+  border: 1px solid var(--border);
+  border-radius: 10px;
 }
 
-.hero .author a { color: var(--muted); }
-.hero .author a:hover { color: var(--accent); }
+.author-photo {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  object-fit: cover;
+  flex-shrink: 0;
+}
+
+.author-name {
+  font-weight: 700;
+  font-size: 0.95rem;
+}
+
+.author-name a { color: var(--text); }
+.author-name a:hover { color: var(--accent); text-decoration: none; }
+
+.author-bio {
+  font-size: 0.825rem;
+  color: var(--muted);
+  margin-top: 0.25rem;
+  line-height: 1.5;
+}
+
+.author-links {
+  font-size: 0.8rem;
+  margin-top: 0.4rem;
+}
+
+.author-links a { color: var(--muted); }
+.author-links a:hover { color: var(--accent); }
+
+@media (max-width: 480px) {
+  .author-card { flex-direction: column; }
+}
 
 /* Section grid */
 .section-grid {
