@@ -338,6 +338,50 @@ footer {
   margin-top: 0.5rem;
 }
 
+/* Share buttons */
+.share-bar {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  margin: 2rem 0 1rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid var(--border);
+  flex-wrap: wrap;
+}
+
+.share-label {
+  font-size: 0.8rem;
+  color: var(--muted);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  margin-right: 0.25rem;
+}
+
+.share-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  padding: 5px 14px;
+  border-radius: 999px;
+  border: 1.5px solid var(--border);
+  background: var(--card-bg);
+  color: var(--text);
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+
+.share-btn:hover { text-decoration: none; }
+.share-btn.wa  { border-color: #25d366; color: #25d366; }
+.share-btn.wa:hover  { background: #25d366; color: white; }
+.share-btn.x   { border-color: #000; color: #000; }
+.share-btn.x:hover   { background: #000; color: white; }
+.share-btn.li  { border-color: #0a66c2; color: #0a66c2; }
+.share-btn.li:hover  { background: #0a66c2; color: white; }
+
 /* ICML logo in header */
 .icml-logo {
   height: 28px;
