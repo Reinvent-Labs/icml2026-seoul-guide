@@ -261,3 +261,88 @@ footer {
   color: var(--muted);
   text-align: center;
 }
+
+/* Store and map buttons */
+.store-links, .map-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.4rem;
+  margin: 0.6rem 0 0.4rem;
+}
+
+.store-btn, .map-btn {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 600;
+  padding: 3px 10px;
+  border-radius: 5px;
+  border: 1px solid var(--border);
+  background: var(--tag-bg);
+  color: var(--text);
+  text-decoration: none;
+  transition: background 0.15s, border-color 0.15s;
+}
+
+.store-btn:hover, .map-btn:hover {
+  background: var(--accent-light);
+  border-color: var(--accent);
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Events / Socials */
+.date-section {
+  margin-bottom: 2.5rem;
+}
+
+.date-label {
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: var(--accent);
+  margin-bottom: 0.75rem;
+  padding-bottom: 0.4rem;
+  border-bottom: 2px solid var(--accent-light);
+}
+
+.event-card {
+  padding: 1rem 1.25rem;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  margin-bottom: 0.6rem;
+  background: var(--card-bg);
+}
+
+.event-title {
+  font-weight: 600;
+  font-size: 0.95rem;
+}
+
+.event-title a { color: var(--text); }
+.event-title a:hover { color: var(--accent); text-decoration: none; }
+
+.event-meta {
+  font-size: 0.8rem;
+  color: var(--muted);
+  margin-top: 0.2rem;
+}
+
+.event-desc {
+  font-size: 0.875rem;
+  margin-top: 0.4rem;
+  line-height: 1.5;
+}
+
+.event-tags {
+  margin-top: 0.5rem;
+}
+
+/* ICML logo in header */
+.icml-logo {
+  height: 28px;
+  width: auto;
+  vertical-align: middle;
+  margin-right: 0.5rem;
+  opacity: 0.9;
+}
